@@ -1,0 +1,154 @@
+PATIENT:
+INSERT INTO patient VALUES ("1000", "Sham Targe",       "2002-07-14",   "8352834825");
+INSERT INTO patient VALUES ("1001", "Chitrang Bhoir",   "2005-03-28",   "7452834825");
+INSERT INTO patient VALUES ("1002", "Nikhil Randive",   "2005-06-12",   "9372834825");
+INSERT INTO patient VALUES ("1003", "Om Rajput",        "2001-08-04",   "8352833578"); 
+INSERT INTO patient VALUES ("1004", "Praven Kamble",    "2003-12-09",   "8325834825");
+INSERT INTO patient VALUES ("1005", "Rahul Shete",      "2006-04-29",   "4622834825");
+INSERT INTO patient VALUES ("1006", "Rushikesh Sawant", "2002-09-24",   "0282834825");
+INSERT INTO patient VALUES ("1007", "Samarth Salunke",  "2006-03-12",   "6492834825");
+INSERT INTO patient VALUES ("1008", "Sonal Khandre",    "1992-07-27",   "9362834821");
+INSERT INTO patient VALUES ("1009", "Sony Kankate",     "1997-08-21",   "7393283485");
+INSERT INTO patient VALUES ("1010", "Sumit Swami",      "1994-12-06",   "9262882625");
+INSERT INTO patient VALUES ("1011", "Jitesh Kale",      "1993-07-11",   "9975062112");
+INSERT INTO patient VALUES ("1012", "Eshu Mogal",       "2000-07-14",   "9934276411");
+INSERT INTO patient VALUES ("1013", "Ketan Gore ",      "2002-07-14",   "8351679334");
+INSERT INTO patient VALUES ("1014", "Vishal Jagtap",    "1883-04-18",   "8352834825");
+INSERT INTO patient VALUES ("1015", "Yash Patil",       "1992-11-14",   "8995324825");
+INSERT INTO patient VALUES ("1016", "Raj Jadhav ",      "2002-07-14",   "8352834825");
+INSERT INTO patient VALUES ("1017", "Harshal Salve",    "1998-04-23",   "8888443610");
+INSERT INTO patient VALUES ("1018", "Ramesh Kanade",    "1926-08-14",   "7639834825");
+INSERT INTO patient VALUES ("1019", "Krishna Salve",    "2004-01-02",   "8352834825");
+
+
+
+
+
+DEPARTMENT:
+INSERT INTO department VALUES ("Surgery",   1);
+INSERT INTO department VALUES ("Eye Care",  2);
+INSERT INTO department VALUES ("Dental",    3);
+INSERT INTO department VALUES ("Check up",  4);
+
+
+
+
+
+DOCTOR:
+INSERT INTO doctor VALUES ("4000",  "Ankush Unde",          "Surgeon",          "6249286492",   75000,  "Surgery");
+INSERT INTO doctor VALUES ("4001",  "Nishant Mahale",       "Surgeon",          "8372586492",   55000,  "Surgery");
+INSERT INTO doctor VALUES ("4002",  "Avishkar Badgujar",    "Surgeon",          "7395286492",   65000,  "Surgery");
+INSERT INTO doctor VALUES ("4003",  "Sameet Sable",         "MD",               "9529342992",   55000,  "Checkup");
+INSERT INTO doctor VALUES ("4004",  "Dhanashree Kshatriya", "Dentist",          "8245286496",   45000,  "Dental");
+INSERT INTO doctor VALUES ("4005",  "Samrat Shrishrimal",   "Dentist",          "7359286232",   45000,  "Dental");
+INSERT INTO doctor VALUES ("4006",  "Sanket Shinde",        "BHMS",             "7359528612",   55000,  "Checkup");
+INSERT INTO doctor VALUES ("4007",  "Prasad Karad",         "MD",               "9835824592",   85000,  "Surgery");
+INSERT INTO doctor VALUES ("4008",  "Pallavi Chitke",       "Opthalmologist",   "2365286492",   65000,  "Eye Care");
+INSERT INTO doctor VALUES ("4009",  "Sahil Dev",            "Surgeon",          "0835286492",   75000,  "Surgery");
+INSERT INTO doctor VALUES ("4010",  "Tejas Khainar",        "MD",               "5274286492",   75000,  "Surgery");
+INSERT INTO doctor VALUES ("4011",  "Stavn Ghorpade",       "Surgeon",          "7329286492",   75000,  "Surgery");
+INSERT INTO doctor VALUES ("4012",  "Pratik Ralegaonkar",   "MD",               "8355286492",   75000,  "Surgery");
+INSERT INTO doctor VALUES ("4013",  "Karan Niphadkar",      "Surgeon",          "8235286492",   75000,  "Surgeon");
+INSERT INTO doctor VALUES ("4014",  "Tanmay Chinchole",     "Opthalmologist",   "8535286492",   55000,  "Eye Care");
+INSERT INTO doctor VALUES ("4015",  "Kedar Ralegaonkar",    "BHMS",             "9375286492",   40000,  "Check up");
+INSERT INTO doctor VALUES ("4016",  "Mayur Thoke",          "MD",               "7274864925",   75000,  "Surgery");
+INSERT INTO doctor VALUES ("4017",  "Pranav Shinkar",       "BHMS",             "7263286492",   45000,  "Check up");
+INSERT INTO doctor VALUES ("4018",  "Vishnu Jadhav",        "BHMS",             "9254286492",   45000,  "Check up");
+INSERT INTO doctor VALUES ("4019",  "Shree Vikhankar",      "BHMS",             "7025286492",   45000,  "Check up");
+
+
+
+
+NURSE:
+INSERT INTO nurse VALUES("8000",    "Shilpa Kumar",         "7273659258",   40000);
+INSERT INTO nurse VALUES("8001",    "Vishnu Iyer",          "9036659258",   40000);
+INSERT INTO nurse VALUES("8002",    "Sai Suryawanshi",      "8357659258",   40000);
+INSERT INTO nurse VALUES("8003",    "Vedashree Satpute",    "9026659258",   40000);
+INSERT INTO nurse VALUES("8004",    "Shreyas Lahor",        "9372659258",   40000);
+INSERT INTO nurse VALUES("8005",    "Samruddhi Patil",      "9279659258",   40000);
+INSERT INTO nurse VALUES("8006",    "Rhythm Dev",           "7292659258",   40000);
+INSERT INTO nurse VALUES("8007",    "Rachel Green",         "9375659258",   40000);
+INSERT INTO nurse VALUES("8008",    "Walter White",         "5935659258",   40000);
+INSERT INTO nurse VALUES("8009",    "Jesse Pinkman",        "9266592398",   40000);
+INSERT INTO nurse VALUES("8010",    "Monica Gellar",        "835859258",    40000);
+INSERT INTO nurse VALUES("8011",    "Joey Tribiane",        "8396659258",   40000);
+INSERT INTO nurse VALUES("8012",    "Chandler Bing",        "8292559258",   40000);
+
+
+
+
+
+ADMISSION:
+INSERT INTO admission VALUES ("1000", "2020-03-23", "2020-04-02", 101,    42530,  42530);
+INSERT INTO admission VALUES ("1001", "2020-03-27", "2020-03-29", 102,    2680,   2000);
+INSERT INTO admission VALUES ("1002", "2020-03-27", "2020-03-30", 103,    4050,   4050);
+INSERT INTO admission VALUES ("1003", "2020-04-05", "2020-04-17", 104,    6358,   6358);
+INSERT INTO admission VALUES ("1004", "2020-04-05", "2020-05-09", 105,    52037,  50000);
+INSERT INTO admission VALUES ("1005", "2020-05-15", "2020-05-20", 106,    42520,  42520);
+INSERT INTO admission VALUES ("1006", "2020-05-17", "2020-05-28", 107,    80020,  80020);
+INSERT INTO admission VALUES ("1007", "2020-05-28", "2020-06-18", 108,    7290,   7290);
+INSERT INTO admission VALUES ("1008", "2020-05-28", "2020-06-14", 109,    48250,  48250);
+INSERT INTO admission VALUES ("1009", "2020-05-28", "2020-05-31", 110,    91640,  91640);
+INSERT INTO admission VALUES ("1010", "2020-06-08", "2020-07-04", 111,    17936,  17936);
+INSERT INTO admission VALUES ("1011", "2020-06-15", "2020-06-18", 112,    4253,   4253);
+INSERT INTO admission VALUES ("1012", "2020-06-22", "2020-06-29", 113,    4130,   4130);
+INSERT INTO admission VALUES ("1013", "2020-07-13", "2020-07-15", 114,    9270,   9270);
+INSERT INTO admission VALUES ("1014", "2020-08-12", "2020-08-15", 115,    5372,   5372);
+INSERT INTO admission VALUES ("1015", "2020-09-22", "2020-09-28", 116,    10000,  10000);
+INSERT INTO admission VALUES ("1016", "2020-09-25", "2020-10-18", 117,    19263,  19263);
+INSERT INTO admission VALUES ("1017", "2020-09-25", "2020-10-06", 118,    500,    500);
+INSERT INTO admission VALUES ("1018", "2020-10-10", "2020-10-10", 119,    150,    150);
+INSERT INTO admission VALUES ("1019", "2020-10-15", "2020-10-15", 120,    100,    100);
+
+
+
+
+
+DIAGNOSIS:
+INSERT INTO diagnosis VALUES ("1000", "Heart Transplant",       "4000");
+INSERT INTO diagnosis VALUES ("1001", "Kidney Stone",           "4001");
+INSERT INTO diagnosis VALUES ("1002", "Bypass Surgery",         "4002");
+INSERT INTO diagnosis VALUES ("1003", "Alzheimer's Disease",    "4003");
+INSERT INTO diagnosis VALUES ("1004", "Root Canal",             "4004");
+INSERT INTO diagnosis VALUES ("1005", "Tooth Replacement",      "4005");
+INSERT INTO diagnosis VALUES ("1006", "Bone Fracture",          "4006");
+INSERT INTO diagnosis VALUES ("1007", "Liver Failure",          "4007");
+INSERT INTO diagnosis VALUES ("1008", "Color Blindness",        "4008");
+INSERT INTO diagnosis VALUES ("1009", "Kidney Transplant",      "4009");
+INSERT INTO diagnosis VALUES ("1010", "Skin Cancer",            "4010");
+INSERT INTO diagnosis VALUES ("1011", "Appendicitis",           "4011");
+INSERT INTO diagnosis VALUES ("1012", "Stroke",                 "4012");
+INSERT INTO diagnosis VALUES ("1013", "Hernia",                 "4013");
+INSERT INTO diagnosis VALUES ("1014", "Night Blindness",        "4014");
+INSERT INTO diagnosis VALUES ("1015", "Stitches",               "4015");
+INSERT INTO diagnosis VALUES ("1016", "Arthritis",              "4016");
+INSERT INTO diagnosis VALUES ("1017", "Covid",                  "4017");
+INSERT INTO diagnosis VALUES ("1018", "Cough and Cold",         "4018");
+INSERT INTO diagnosis VALUES ("1019", "Regular Checkup",        "4019");
+
+
+
+
+
+
+NURSE_DUTY:
+INSERT INTO nurse_duty VALUES("8000",   101);
+INSERT INTO nurse_duty VALUES("8001",   102);
+INSERT INTO nurse_duty VALUES("8002",   103);
+INSERT INTO nurse_duty VALUES("8003",   104);
+INSERT INTO nurse_duty VALUES("8004",   105);
+INSERT INTO nurse_duty VALUES("8005",   106);
+INSERT INTO nurse_duty VALUES("8006",   107);
+INSERT INTO nurse_duty VALUES("8007",   108);
+INSERT INTO nurse_duty VALUES("8008",   109);
+INSERT INTO nurse_duty VALUES("8009",   110);
+INSERT INTO nurse_duty VALUES("8010",   111);
+INSERT INTO nurse_duty VALUES("8011",   112);
+INSERT INTO nurse_duty VALUES("8012",   113);
+INSERT INTO nurse_duty VALUES("8013",   114);
+INSERT INTO nurse_duty VALUES("8014",   115);
+INSERT INTO nurse_duty VALUES("8015",   116);
+INSERT INTO nurse_duty VALUES("8016",   117);
+INSERT INTO nurse_duty VALUES("8017",   118);
+INSERT INTO nurse_duty VALUES("8018",   119);
+INSERT INTO nurse_duty VALUES("8019",   120);

@@ -1,0 +1,98 @@
+create table patient (
+	id			varchar(5),
+    name		varchar(30) 
+		not null,
+    dob		    date,
+    contact_no	varchar(15),
+
+	primary key (id)
+);
+
+create table department (
+	name 	varchar(30)
+        not null,
+    floor	int unsigned
+        not null,
+
+	primary key (name),
+
+    constraint chk_department_floor
+        check (floor < 5)
+);
+
+create table doctor (
+	id			varchar(5),
+    name		varchar(30) 
+		not null,
+    designation	varchar(30),
+    contact_no	varchar(15),
+	salary		numeric(8,0),
+    department 	varchar(30),
+
+	primary key (id),
+
+    constraint fk_doctor_department foreign key (department)
+        references department(name)
+		on delete cascade
+        on update cascade
+);
+
+create table nurse (
+	id			varchar(5),
+    name		varchar(30) 
+		not null,
+    contact_no	varchar(15),
+	salary		numeric(8,0),
+
+	primary key (id)
+);
+
+create table admission (
+	patient_id		varchar(5),
+    admission_date	date,
+    discharge_date	date,
+    bed_no			int unsigned,
+    total_fees		numeric(8,0),
+    fees_paid		numeric(8,0),
+
+	primary key (patient_id, admission_date),
+
+    constraint fk_patient_id foreign key (patient_id)
+        references patient(id)
+		on delete cascade
+        on update cascade,
+
+    constraint chk_admission_fees_paid
+        check (fees_paid <= total_fees),
+    constraint chk_admission_discharge_date
+        check (discharge_date >= admission_date)
+);
+
+create table diagnosis (
+	patient_id	varchar(5),
+    diagnosis	varchar(30),
+    doctor_id	varchar(5),
+
+    primary key (patient_id, diagnosis),
+
+    constraint fk_diagnosis_patient_id foreign key (patient_id)
+        references patient(id)
+		on delete cascade
+        on update cascade,
+	constraint fk_diagnosis_doctor_id foreign key (doctor_id)
+        references doctor(id)
+		on delete cascade
+        on update cascade
+);
+
+create table nurse_duty (
+	nurse_id	varchar(5),
+    bed_no		int unsigned,
+
+    primary key (nurse_id, bed_no),
+
+    constraint fk_nurse_duty_nurse_id foreign key (nurse_id)
+        references nurse(id)
+		on delete cascade
+        on update cascade
+);
